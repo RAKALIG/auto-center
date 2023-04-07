@@ -1,3 +1,4 @@
+/*font-family: 'Roboto', sans-serif;*/
 * {
     box-sizing: border-box;
 }
@@ -14,6 +15,10 @@ body {
 
 .wrapper {
     min-height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
 }
 
 .hero {
@@ -50,15 +55,29 @@ img {
 
 .wrapper {}
 
-.header {}
+.header {
+    padding-top: 16px;
+    background-color: blueviolet;
+}
 
-.container {}
+.container {
+    max-width: 1130px;
+    padding: 0px 5px;
+    margin: 0 auto;
+}
 
 .header__container {
     display: flex;
+    max-width: 1370px;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
 }
 
-.logo {}
+.logo {
+    max-width: 187px;
+    min-width: 81px;
+}
 
 .logo__pic {}
 
@@ -66,11 +85,29 @@ img {
 
 .nav__list {
     display: flex;
+    column-gap: 36px;
 }
 
-.nav__item {}
+.nav__item {
+    border-bottom: 2px solid transparent;
 
-.nav__link {}
+}
+
+.nav__item.active {
+    border-bottom-color: white;
+}
+
+
+.nav__link {
+    font-size: 16px;
+    line-height: 1.13;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav__link:hover {
+    opacity: 0.8;
+}
 
 .geoposition {}
 
@@ -79,3 +116,27 @@ img {
 .phone {}
 
 .phone__number {}
+
+.hero__headline {}
+
+.hero__info {}
+
+.title {}
+
+.subtitle {}
+
+.hero__buttons {}
+
+.btn {}
+
+.sale {}
+
+.sale__element {}
+
+.advantages {}
+
+.advantage {}
+
+.advantage__pic {}
+
+.advantage__text {}
