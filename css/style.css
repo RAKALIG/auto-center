@@ -18,12 +18,14 @@ body {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-
+    position: relative;
 }
 
 .hero {
-    background-color: rgba(242, 206, 218, 0.3);
+    background: url(../img/back-img/чел\ машину\ полирует.png) no-repeat center/cover;
     height: 100vh;
+    min-height: 650px;
+    padding-top: 272px;
 }
 
 ul {
@@ -53,11 +55,14 @@ img {
     max-width: 100%;
 }
 
-.wrapper {}
 
 .header {
     padding-top: 16px;
-    background-color: blueviolet;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #FFFFFF;
 }
 
 .container {
@@ -109,34 +114,104 @@ img {
     opacity: 0.8;
 }
 
-.geoposition {}
+.geoposition {
+    display: flex;
+    align-items: center;
+    column-gap: 52px;
+    font-style: normal;
+}
 
-.geo {}
+.geo {
+    color: white;
+}
 
-.phone {}
+.geo::before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 2px;
+    background: url(../img/icons/геологация.svg) bottom center/contain no-repeat;
+}
 
-.phone__number {}
+.phone {
+    color: white;
+}
+
 
 .hero__headline {}
 
 .hero__info {}
 
-.title {}
+.title {
+    color: #FFFFFF;
+    width: 409px;
+    height: 88px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
 
-.subtitle {}
+.subtitle {
+    color: #FFFFFF;
+    width: 469px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 20px;
+}
 
-.hero__buttons {}
+.hero__buttons {
+    padding-bottom: 20px;
+}
 
-.btn {}
+.btn {
+    width: 170px;
+    height: 44px;
+    background: none;
+    border: 2px #FFFFFF solid;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
 
-.sale {}
+.btn2 {
+    width: 300px;
+}
 
-.sale__element {}
+.sale {
+    color: #FFFFFF;
+    padding-bottom: 160px;
+}
 
-.advantages {}
+.sale__element {
+    color: #ff6666;
+}
 
-.advantage {}
+.advantages {
+    display: flex;
+    column-gap: 130px;
+}
+
+.advantage {
+    border: 2px white solid;
+    width: 277px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .advantage__pic {}
 
-.advantage__text {}
+.advantage__text {
+    color: #FFFFFF;
+
+}
