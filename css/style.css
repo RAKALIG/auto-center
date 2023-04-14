@@ -139,9 +139,13 @@ img {
 }
 
 
-.hero__headline {}
+.main {}
 
-.hero__info {}
+.hero__container {}
+
+.hero__info {
+    flex: 1;
+}
 
 .title {
     color: #FFFFFF;
@@ -151,10 +155,14 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    line-height: 56px;
+    line-height: 1.17;
 }
 
-.subtitle {
+.hero__title {
+    margin-bottom: 49px;
+}
+
+.hero__subtitle {
     color: #FFFFFF;
     width: 469px;
     height: 50px;
@@ -162,8 +170,8 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
-    line-height: 33px;
-    margin-bottom: 20px;
+    line-height: 1.18;
+    margin-bottom: 50px;
 }
 
 .hero__buttons {
@@ -215,3 +223,23 @@ img {
     color: #FFFFFF;
 
 }
+
+.info {}
+
+.info__header {
+    text-align: center;
+}
+
+.more {
+    height: 63px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    color: #E7E7E7;
+}
+
+.recovery {}
+
+.information {}
+
+.information__achievements {}
