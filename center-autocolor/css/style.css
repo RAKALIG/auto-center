@@ -138,27 +138,13 @@ img {
     color: white;
 }
 
-@media (max-width: 960px) {
-
-    .container {
-        max-width: 898px;
-        padding: 0px 5px;
-        margin: 0 auto;
-    }
-
-    .logo {
-        max-width: 181px;
-    }
-
-    .geo {
-        display: none;
-    }
-
-}
-
 .main {}
 
 .hero__container {}
+
+.hero__main {
+    padding-left: 96px;
+}
 
 .hero__info {
     flex: 1;
@@ -241,6 +227,67 @@ img {
 
 }
 
+@media (max-width: 960px) {
+
+    .container {
+        max-width: 898px;
+        padding: 0px 5px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 181px;
+    }
+
+    .geo {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 272px;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .hero__main {
+        padding-left: 73px;
+    }
+
+    .hero__title {
+        margin-bottom: 17px;
+    }
+
+    .hero__subtitle {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header .nav {
+        display: none;
+    }
+
+    .logo {
+        max-width: 142px;
+    }
+
+    .container {
+        max-width: 726px;
+    }
+
+    .hero {
+        padding-top: 170px;
+    }
+
+    .hero__main {
+        padding-left: 60px;
+    }
+}
 
 .info {}
 
