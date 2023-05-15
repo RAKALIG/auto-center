@@ -131,16 +131,34 @@ img {
 .burger {
     width: 47px;
     height: 31px;
-    background-color: #ED7173;
-    display: flex;
+    display: none;
+    align-items: center;
+    position: relative;
 }
 
-.burger__el {
+.burger__el,
+.burger__el::before,
+.burger__el::after {
     display: block;
     width: 100%;
     height: 5px;
     background-color: #D9D9D9;
     border-radius: 11px;
+}
+
+.burger__el::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.burger__el::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 83%;
 }
 
 .main {
@@ -163,7 +181,7 @@ img {
 
 .hero__main {
     flex: 1;
-    padding-left: 96px;
+    padding-left: 8.5%;
 }
 
 .title {
@@ -279,7 +297,9 @@ img {
         z-index: 2;
     }
 
-
+    .burger {
+        display: flex;
+    }
 
     .header__contacts {
         display: none;
@@ -341,4 +361,211 @@ img {
         width: 24px;
         height: 24px;
     }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90.6%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
+    }
+
+    .hero__btns {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantage {
+        flex: 0 1 56px;
+        text-align: initial;
+        flex-direction: row;
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+
+    .advantage__icon {
+        margin-bottom: 0px;
+    }
+
+    .advantage__icon path {
+        fill: black;
+    }
+
+    .advantage__text {
+        color: #000000;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        max-width: 81px;
+        max-height: 30px;
+    }
+
+    .burger {
+        width: 29px;
+        height: 19px;
+    }
+
+    .burger__el,
+    .burger__el::before,
+    .burger__el::after {
+        height: 3px;
+    }
+
+    .hero {
+        max-width: 320px;
+        padding-top: 65px;
+    }
+
+    .hero__main {
+        padding-top: 40px;
+        max-width: 241px;
+        padding-left: 10px;
+        max-height: 300px;
+    }
+
+    .hero__title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .hero__subtitle {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero__btns {
+        margin-top: 20px;
+        flex-direction: column;
+        row-gap: 13px;
+    }
+
+    .btn {
+        max-height: 35px;
+        font-size: 12px;
+        line-height: 1.16;
+        padding: 7px 15px;
+        max-width: 241px;
+    }
+
+    .btn:first-child {
+        max-width: 135px;
+    }
+
+    .hero__call-to-action {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    .advantages {
+        flex-direction: column;
+        row-gap: 9px;
+    }
+
+    .advantage {
+        max-width: 290px;
+        max-height: 56px;
+        font-size: 14px;
+        line-height: 1.14;
+        display: flex;
+        background-color: #ffffff;
+    }
+
+    .advantage__text {
+        text-align: center;
+        color: #000000;
+        vertical-align: text-top
+    }
+
+    .advantage__icon path {
+        fill: #000000;
+    }
+
+}
+
+.about {
+    color: #000000;
+}
+
+.container-about {}
+
+.about__title {
+
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.about__subtitile {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.about__list {}
+
+.about__item {}
+
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.works {
+    color: black;
+    padding-top: 62px;
+    padding-bottom: 90px;
+}
+
+.container {}
+
+.works__container {}
+
+.works__examples-title {}
+
+.works__examples-subtitle {}
+
+.works__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.works__item {
+    flex: 0 1 calc((100% - 20px * 3) / 4);
+
+}
+
+.works__img-wrap {
+    padding-top: 100%;
+    position: relative;
+}
+
+.works-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.works__item:hover .works-img:nth-child(2) {
+    opacity: 0;
 }
